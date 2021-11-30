@@ -10,6 +10,11 @@ a {
   text-decoration: none;
 }
 
+.closed {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
 .navbar {
   padding: .7rem 1.5rem .7rem 4rem;
   line-height: 2.2rem;
@@ -92,5 +97,15 @@ a.sidebar-link {
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.main {
+  padding-top: 3.6rem;
+}
+
+.article img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=styles.css.map */
