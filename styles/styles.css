@@ -3,7 +3,6 @@
 /* Reset */
 ul, ol {
   margin: 0;
-  list-style-type: none;
 }
 
 a {
@@ -31,7 +30,7 @@ h1 {
   font-size: 1.7rem;
 }
 
-p {
+p, ul, ol {
   line-height: 1.7;
 }
 
@@ -140,6 +139,7 @@ a.sidebar-link {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  height: 200px;
 }
 
 h1:first-child + p {
