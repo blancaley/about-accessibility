@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 /* Reset */
-ul, ol {
+ul, ol, pre, figure {
   margin: 0;
 }
 
@@ -36,6 +36,11 @@ h1 {
 
 p, ul, ol {
   line-height: 1.7;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 
 /* States */
@@ -145,4 +150,15 @@ a.sidebar-link {
 
 h1:first-child+p {
   margin-top: 2rem;
+}
+
+/* Code box examples */
+
+.box-example {
+  border: solid 1px lightgray;
+  padding: 8px 16px;
+
+/*   figcaption {
+    padding: 8px 16px;
+  } */
 }

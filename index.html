@@ -95,6 +95,38 @@
       <p>Stryk aldrig under text som inte är länkad, eftersom det kan leda användarna att felaktigt tro att texten är en länk.</p>
       <img src="/assets/images/lankad-text.png" alt="">
     </article>
+    <article class="article">
+      <h2>Vad kan man tänka på som frontend-utvecklare för att skapa tillgänglig kod?</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam eum eius eos, nesciunt dicta repellat illum ipsa beatae delectus ut pariatur aspernatur reprehenderit, voluptatum dolorum illo tempora voluptates quidem aperiam.</p>
+      <h3>Koppla ihop fältetikett och inmatningsfält</h3>
+      <p>Det vanligaste är att använda label-element för att skriva fältetiketter. Koppla etiketten till rätt inmatningsfält genom att i for-attributet för label-elementet ange id för fältet den ska kopplas till.</p>
+      <figure class="box-example" role="group">
+        <figcaption><h4>Example: Using <code>for</code> and <code>id</code> attributes</h4></figcaption>
+        <figure>
+          <figcaption>
+            🖥️Renderad
+          </figcaption>
+          <label for="username">Användarnamn</label>
+          <input id="username" type="text" name="username">
+        </figure>
+        <figure>
+          <figcaption>
+            Kod
+          </figcaption>
+          <pre>
+            <code>
+&lt;label for="username">Användarnamn&lt;/label>
+
+&lt;input id="username" type="text" name="username">
+            </code>
+          </pre>
+        </figure>
+      </figure>
+      <h3>Skapa rubriker med h-element</h3>
+      <p></p>
+      <h3>Ge användarna möjlighet att pausa eller stänga av rörelser</h3>
+      <p>Personer med nedsatt förmåga att fokusera, läsa eller behålla koncentration kan få problem att använda en sida där innehåll börjar blinka, röra sig eller uppdateras utan att användaren bett om det. 
+      <p>Om en animation eller dynamisk uppdatering startar automatiskt och pågår i mer än 5 sekunder ska användaren enkelt kunna undvika den.</p>
   </main>
 </body>
 </html>
