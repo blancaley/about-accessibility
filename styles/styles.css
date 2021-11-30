@@ -1,5 +1,5 @@
 /* Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 /* Reset */
 ul, ol {
   margin: 0;
@@ -10,11 +10,42 @@ a {
   text-decoration: none;
 }
 
+/* Variables */
+/* General settings */
+body {
+  font-family: "Noto Sans";
+  font-size: 16px;
+  color: #2c3e50;
+  -webkit-font-smoothing: antialiased;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat";
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 1.7rem;
+}
+
+p {
+  line-height: 1.7;
+}
+
+/* States */
+.can-hide {
+  display: none;
+}
+
 .closed {
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
 }
 
+/* Navbar */
 .navbar {
   padding: .7rem 1.5rem .7rem 4rem;
   line-height: 2.2rem;
@@ -26,6 +57,7 @@ a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-bottom: 1px solid #eaecef;
+  width: 100%;
 }
 
 .navbar .logo {
@@ -57,8 +89,9 @@ a {
 }
 
 .site-name {
-  font-size: 1.3rem;
-  font-weight: 600;
+  font-family: "Montserrat";
+  font-size: 1rem;
+  font-weight: 700;
   color: #2c3e50;
   text-transform: uppercase;
 }
@@ -100,12 +133,16 @@ a.sidebar-link {
 }
 
 .main {
-  padding-top: 3.6rem;
+  padding: 3.6rem 1.5rem 1.5rem 1.5rem;
 }
 
 .article img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+h1:first-child + p {
+  margin-top: 2rem;
 }
 /*# sourceMappingURL=styles.css.map */
