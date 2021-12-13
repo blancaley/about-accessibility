@@ -57,8 +57,8 @@
     </article>
     <article class="article">
       <h2>Hur skapar man tillgänglig design på en webbplats?</h2>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam eum eius eos, nesciunt dicta repellat illum ipsa beatae delectus ut pariatur aspernatur reprehenderit, voluptatum dolorum illo tempora voluptates quidem aperiam.</p>
-      <p>Tillgänglighet på webben standardiseras i riktlinjerna Web Content Accessibility Guidelines (WCAG), som har tagits fram av WAI (Web Accessibility Initiative) inom W3C (World Wide Web Consortium). </p>
+      <p>God design är lika viktig för tillgängligheten som den tekniska koden. Forskning visar att om en användare rör sig i en miljö som de gillar så har de en bättre förutsättning att ta till sig informationen och förstå gränssnittet.</p>
+      <p>För användarna innebär en attraktiv och välgjord design bland annat en lägre kognitiv belastning, som i sin tur leder till att informationen upplevs som enklare samt ger större tolerans och tålamod om något moment tar lite tid. Dessutom ökar användarnas tillit och förtroende till avsändaren bakom innehållet.</p>
       <h3>Anpassa webbplatsen även för små skärmar</h3>
       <ul>
         <li>Visa det viktigaste innehållet tidigt.
@@ -97,11 +97,15 @@
     </article>
     <article class="article">
       <h2>Vad kan man tänka på som frontend-utvecklare för att skapa tillgänglig kod?</h2>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam eum eius eos, nesciunt dicta repellat illum ipsa beatae delectus ut pariatur aspernatur reprehenderit, voluptatum dolorum illo tempora voluptates quidem aperiam.</p>
+      <p>Vid utvecklingen av en ny webbplats är det viktigt att den byggs så att den blir tillgänglig för alla att använda.</p>
+      <p><a href="https://webbriktlinjer.se">Vägledningen för webbutveckling</a> är de officiella riktlinjerna för hur man bör arbeta med webbplatser i offentlig sektor och har mycket bra information om digital tillgänglighet och användbarhet.</p>
+      <p>Tillgänglighet på webben standardiseras i riktlinjerna <a href="https://www.w3.org/WAI/standards-guidelines/wcag/">Web Content Accessibility Guidelines</a> (WCAG), som har tagits fram av <a href="https://www.w3.org/WAI/">WAI</a> (Web Accessibility Initiative) inom <a href="https://www.w3.org">W3C</a> (World Wide Web Consortium).</p>
+      <p>Här nedan finns några exempel på vad man som frontend-utvecklare kan tänka på för att skapa tillgänglig kod.</p>
+
       <h3>Koppla ihop fältetikett och inmatningsfält</h3>
       <p>Det vanligaste är att använda label-element för att skriva fältetiketter. Koppla etiketten till rätt inmatningsfält genom att i for-attributet för label-elementet ange id för fältet den ska kopplas till.</p>
       <figure class="box-example" role="group">
-        <figcaption><h4>Example: Using <code>for</code> and <code>id</code> attributes</h4></figcaption>
+        <figcaption><h4>Exempel: Användning av <code>for</code> och <code>id</code> attribut</h4></figcaption>
         <figure>
           <figcaption>
             🖥️Renderad
@@ -111,7 +115,7 @@
         </figure>
         <figure>
           <figcaption>
-            Kod
+            Exempelkod
           </figcaption>
           <pre>
             <code>
@@ -122,11 +126,127 @@
           </pre>
         </figure>
       </figure>
+
       <h3>Skapa rubriker med h-element</h3>
-      <p></p>
+      <p>Märk upp rubriker med h1, h2 och så vidare. Undvik att särskilja en rubrik från brödtext enbart genom formgivning. Det gör det nämligen svårare för personer med vissa hjälpmedel att navigera på sidan, och svårare för sökmotorer att avgöra vad sidan handlar om.</p>
+      <figure class="box-example" role="group">
+        <figcaption><h4>Exempel: Skapa rubriker med <code>h</code> element</h4></figcaption>
+        <figure>
+          <figcaption>
+            🖥️Renderad
+          </figcaption>
+          <h2>3 fakta om körsbärsblommor</h2>
+          <p>När som helst kommer körsbärsträden blomma och himlen färgas rosa. När träden väl står i blom är våren här på riktigt. Här är 3 fakta om körsbärsblommor som är roliga att känna till – håll tillgodo!</p>
+          <h3>Körsbärsblomman har en egen festival</h3>
+          <p>Världens största festival för körsbärsblomman firas i USA:s huvudstad Washington D.C där blomman är en symbol för vänskapen mellan Japan och USA. </p>
+          <h3>Blommar bara en vecka</h3>
+          <p>Blommorna har normalt sett fem urnupna kronblad och blommorna sitter tillsammans i klasar. Formen och färgen på dessa blommor har länge fått symbolisera renhet och enkelhet. Blomningssäsongen varar vanligtvis upp till en månad medan varje enskilt träd endast kan blomma i en vecka. Träden lever i mellan 30 till 40 år.</p>
+          <h3>Bästsäljande doft</h3>
+          <p>Den populäraste och mest sålda parfymen i USA är Bath and Body Works' Japanese Cherry Blossom med doft av körsbärsblomman.</p>
+        </figure>
+        <figure>
+          <figcaption>
+            Exempelkod
+          </figcaption>
+          <pre>
+            <code>
+&lt;h2>3 fakta om körsbärsblommor&lt;/h2>
+&lt;p>När som helst kommer körsbärsträden blomma och himlen färgas rosa. När träden väl står i blom är våren här på riktigt. Här är 3 fakta om körsbärsblommor som är roliga att känna till – håll tillgodo!&lt;/p>
+
+&lt;h3>Körsbärsblomman har en egen festival&lt;/h3>
+&lt;p>Världens största festival för körsbärsblomman firas i USA:s huvudstad Washington D.C där blomman är en symbol för vänskapen mellan Japan och USA.&lt;/p>
+
+&lt;h3>Blommar bara en vecka&lt;/h3>
+&lt;p>Blommorna har normalt sett fem urnupna kronblad och blommorna sitter tillsammans i klasar. Formen och färgen på dessa blommor har länge fått symbolisera renhet och enkelhet. Blomningssäsongen varar vanligtvis upp till en månad medan varje enskilt träd endast kan blomma i en vecka. Träden lever i mellan 30 till 40 år.&lt;/p>
+
+&lt;h3>Bästsäljande doft&lt;/h3>
+&lt;p>Den populäraste och mest sålda parfymen i USA är Bath and Body Works' Japanese Cherry Blossom med doft av körsbärsblomman.&lt;/p>
+            </code>
+          </pre>
+        </figure>
+      </figure>
+
+      <h3>Beskriv med text allt innehåll som inte är text</h3>
+      <p>Användare som är beroende av till exempel skärmläsare och punktdisplay behöver beskrivningar av allt innehåll som inte är text. Det beskrivs i textalternativ eller alt-texter som det också kallas.</p>
+      <p>Tanken med textalternativ (oftast attributet <code>alt</code>) är att det ska kunna ersätta bilden för den som inte ser. Textalternativ innebär oftast en kort beskrivning av motivet – eller av funktionen i de fall bilden används exempelvis som symbol på en knapp.</p>
+      <figure class="box-example" role="group">
+        <figcaption><h4>Exempel: Användning av <code>alt</code> attributet i bild</h4></figcaption>
+        <figure>
+          <figcaption>
+            🖥️Renderad
+          </figcaption>
+          <img src="/assets/images/cherryflowers.jpg" alt="Rosa körsbärsblommor">
+        </figure>
+        <figure>
+          <figcaption>
+            Exempelkod
+          </figcaption>
+          <pre>
+            <code>
+&lt;img src="/assets/images/cherryflowers.jpg" alt="Rosa körsbärsblommor">
+            </code>
+          </pre>
+        </figure>
+      </figure>
+
       <h3>Ge användarna möjlighet att pausa eller stänga av rörelser</h3>
-      <p>Personer med nedsatt förmåga att fokusera, läsa eller behålla koncentration kan få problem att använda en sida där innehåll börjar blinka, röra sig eller uppdateras utan att användaren bett om det. 
-      <p>Om en animation eller dynamisk uppdatering startar automatiskt och pågår i mer än 5 sekunder ska användaren enkelt kunna undvika den.</p>
+      <p>Personer med nedsatt förmåga att fokusera, läsa eller behålla koncentration kan få problem att använda en sida där innehåll börjar blinka, röra sig eller uppdateras utan att användaren bett om det. Därför måste sådana visuella distraktioner antingen upphöra efter max 5 sekunder, eller så ska det finnas en möjlighet för användaren att pausa rörelser, stoppa eller dölja dem. Exempel på sådant innehåll är animationer, video, rullande nyhetstext, annonser och statusindikatorer som till exempel en “progress-mätare”.</p> 
+      <p>Kriteriet behöver inte tillämpas när rörelsen eller uppdateringen är av avgörande betydelse. Till exempel när visning av en kort reklamfilm är obligatorisk för alla användare och ingenting annat presenteras samtidigt. Då finns det ju ingenting att distrahera från.</p>
+
+      <h3>Gör det enkelt att ringa upp telefonnummer</h3>
+      <p>Markera telefonnummer i koden som telefonlänkar (tel:). Det ger möjlighet att direkt ringa upp numret.</p>
+      <p>Ange det fullständiga telefonnumret, inklusive det internationella prefixet, i länken – även om det nummer som visas på sidan bara innehåller den lokala delen. Då fungerar länken oavsett varifrån användaren ringer.</p>
+
+      <figure class="box-example" role="group">
+        <figcaption><h4>Exempel: Markera telefonlänk i koden med   <code>href="tel:</code> attributet</h4></figcaption>
+        <figure>
+          <figcaption>
+            🖥️Renderad
+          </figcaption>
+          <a href="tel:+46855050000">08 – 55 05 00 00</a>
+        </figure>
+        <figure>
+          <figcaption>
+            Exempelkod
+          </figcaption>
+          <pre>
+            <code>
+&lt;a href="tel:+46855050000">08 – 55 05 00 00&lt;/a>
+            </code>
+          </pre>
+        </figure>
+      </figure>
+
+      <h3>Hjälp användarna att undvika och rätta till misstag</h3>
+      <p>Ge tydliga instruktioner, felmeddelanden och aviseringar för att hjälpa användare att fylla i formulär på din webbplats. När ett fel uppstår: hjälp användare att hitta var problemet ligger, ge specifika, förståeliga förklaringar och föreslå korrigeringar.</p>
+      <p>Var så överseende med formatet som möjligt när du bearbetar användarinmatning. Acceptera till exempel telefonnummer som innehåller mellanslag och radera mellanslag vid behov.</p>
+
+      <figure class="box-example" role="group">
+        <figcaption><h4>Exempel: Australiskt telefonnummerfält med förlåtande validering</h4></figcaption>
+        <figure>
+          <figcaption>
+            🖥️Renderad
+          </figcaption>
+          <label for="phone">Telefonnummer</label>
+          <input id="phone" name="phone" type="tel" pattern="^(\(?0[1-9]{1}\)?)?[0-9 -]*$" aria-describedby="phone-desc">
+          <p id="phone-desc">Exempel: (02) 1234 1234</p>
+        </figure>
+        <figure>
+          <figcaption>
+            Exempelkod
+          </figcaption>
+          <pre>
+            <code>
+&lt;label for="phone">Phone&lt;/label>
+&lt;input id="phone" name="phone" type="tel"
+pattern="^(\(?0[1-9]{1}\)?)?[0-9 -]*$"
+aria-describedby="phone-desc">
+&lt;p id="phone-desc">For example, (02) 1234 1234&lt;/p>
+            </code>
+          </pre>
+        </figure>
+      </figure>
+    </article>
   </main>
 </body>
 </html>
