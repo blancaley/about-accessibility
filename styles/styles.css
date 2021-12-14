@@ -180,9 +180,10 @@ a.sidebar-link {
 
 .article img {
   width: 100%;
+  max-height: 400px;
+  margin: 2rem 0;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 200px;
 }
 
 h1:first-child + p {
