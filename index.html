@@ -47,7 +47,6 @@
     <article class="article">
       <h1>Tillgänglighet</h1>
       <p>Tillgänglighet innebär att personer med funktionsnedsättning har tillträde till den fysiska miljön, transporter och anläggningar, och tillgång till information, kommunikation, varor, produkter och tjänster.</p>
-      <p>Tillgänglighet ger alla möjlighet att delta och uppleva saker oberoende av individernas olika egenskaper.</p>
     </article>
     <article class="article">
       <h2>Vad innebär tillgänglighet på webben?</h2>
@@ -58,8 +57,9 @@
     <article class="article">
       <h2>Hur skapar man tillgänglig design på en webbplats?</h2>
       <p>God design är lika viktig för tillgängligheten som den tekniska koden. Forskning visar att om en användare rör sig i en miljö som de gillar så har de en bättre förutsättning att ta till sig informationen och förstå gränssnittet.</p>
-      <p>För användarna innebär en attraktiv och välgjord design bland annat en lägre kognitiv belastning, som i sin tur leder till att informationen upplevs som enklare samt ger större tolerans och tålamod om något moment tar lite tid. Dessutom ökar användarnas tillit och förtroende till avsändaren bakom innehållet.</p>
+      <p>För användarna innebär en attraktiv och välgjord design bland annat en lägre kognitiv belastning, som i sin tur leder till att informationen upplevs som enklare samt ger större tolerans och tålamod om något moment tar lite tid. Dessutom ökar användarnas tillit och förtroende till avsändaren bakom innehållet. Här får du några exempel på hur man skapar tillgänglig design på en webbplats.</p>
       <h3>Anpassa webbplatsen även för små skärmar</h3>
+      <p>Allt fler använder mobilen eller andra enheter med små skärmar för att besöka webbplatser och använda tjänster och program. Anpassa därför information, funktioner och gränssnitt för alla typer av skärmar.</p>
       <ul>
         <li>Visa det viktigaste innehållet tidigt.
         </li>
@@ -106,64 +106,68 @@
       <p>Det vanligaste är att använda label-element för att skriva fältetiketter. Koppla etiketten till rätt inmatningsfält genom att i for-attributet för label-elementet ange id för fältet den ska kopplas till.</p>
       <figure class="box-example" role="group">
         <figcaption><h4>Exempel: Användning av <code>for</code> och <code>id</code> attribut</h4></figcaption>
-        <figure>
-          <figcaption>
-            🖥️Renderad
-          </figcaption>
-          <label for="username">Användarnamn</label>
-          <input id="username" type="text" name="username">
-        </figure>
-        <figure>
-          <figcaption>
-            Exempelkod
-          </figcaption>
-          <pre>
-            <code>
-&lt;label for="username">Användarnamn&lt;/label>
+        <div class="two-columns inner-box">
+          <figure>
+            <figcaption>
+              🖥️Renderad
+            </figcaption>
+            <label for="username">Användarnamn</label>
+            <input id="username" type="text" name="username">
+          </figure>
+          <figure>
+            <figcaption>
+              Exempelkod
+            </figcaption>
+            <pre>
+              <code>
+  &lt;label for="username">Användarnamn&lt;/label>
 
-&lt;input id="username" type="text" name="username">
-            </code>
-          </pre>
-        </figure>
+  &lt;input id="username" type="text" name="username">
+              </code>
+            </pre>
+          </figure>
+        </div>
       </figure>
 
       <h3>Skapa rubriker med h-element</h3>
       <p>Märk upp rubriker med h1, h2 och så vidare. Undvik att särskilja en rubrik från brödtext enbart genom formgivning. Det gör det nämligen svårare för personer med vissa hjälpmedel att navigera på sidan, och svårare för sökmotorer att avgöra vad sidan handlar om.</p>
       <figure class="box-example" role="group">
         <figcaption><h4>Exempel: Skapa rubriker med <code>h</code> element</h4></figcaption>
-        <figure>
-          <figcaption>
-            🖥️Renderad
-          </figcaption>
-          <h2>3 fakta om körsbärsblommor</h2>
-          <p>När som helst kommer körsbärsträden blomma och himlen färgas rosa. När träden väl står i blom är våren här på riktigt. Här är 3 fakta om körsbärsblommor som är roliga att känna till – håll tillgodo!</p>
-          <h3>Körsbärsblomman har en egen festival</h3>
-          <p>Världens största festival för körsbärsblomman firas i USA:s huvudstad Washington D.C där blomman är en symbol för vänskapen mellan Japan och USA. </p>
-          <h3>Blommar bara en vecka</h3>
-          <p>Blommorna har normalt sett fem urnupna kronblad och blommorna sitter tillsammans i klasar. Formen och färgen på dessa blommor har länge fått symbolisera renhet och enkelhet. Blomningssäsongen varar vanligtvis upp till en månad medan varje enskilt träd endast kan blomma i en vecka. Träden lever i mellan 30 till 40 år.</p>
-          <h3>Bästsäljande doft</h3>
-          <p>Den populäraste och mest sålda parfymen i USA är Bath and Body Works' Japanese Cherry Blossom med doft av körsbärsblomman.</p>
-        </figure>
-        <figure>
-          <figcaption>
-            Exempelkod
-          </figcaption>
-          <pre>
-            <code>
-&lt;h2>3 fakta om körsbärsblommor&lt;/h2>
-&lt;p>När som helst kommer körsbärsträden blomma och himlen färgas rosa. När träden väl står i blom är våren här på riktigt. Här är 3 fakta om körsbärsblommor som är roliga att känna till – håll tillgodo!&lt;/p>
+        <div class="two-columns inner-box">
+          <figure>
+            <figcaption>
+              🖥️Renderad
+            </figcaption>
+            <h2>3 fakta om körsbärsblommor</h2>
+            <p>När som helst kommer körsbärsträden blomma och himlen färgas rosa. När träden väl står i blom är våren här på riktigt. Här är 3 fakta om körsbärsblommor som är roliga att känna till – håll tillgodo!</p>
+            <h3>Körsbärsblomman har en egen festival</h3>
+            <p>Världens största festival för körsbärsblomman firas i USA:s huvudstad Washington D.C där blomman är en symbol för vänskapen mellan Japan och USA. </p>
+            <h3>Blommar bara en vecka</h3>
+            <p>Blommorna har normalt sett fem urnupna kronblad och blommorna sitter tillsammans i klasar. Formen och färgen på dessa blommor har länge fått symbolisera renhet och enkelhet. Blomningssäsongen varar vanligtvis upp till en månad medan varje enskilt träd endast kan blomma i en vecka. Träden lever i mellan 30 till 40 år.</p>
+            <h3>Bästsäljande doft</h3>
+            <p>Den populäraste och mest sålda parfymen i USA är Bath and Body Works' Japanese Cherry Blossom med doft av körsbärsblomman.</p>
+          </figure>
+          <figure>
+            <figcaption>
+              Exempelkod
+            </figcaption>
+            <pre>
+              <code>
+  &lt;h2>3 fakta om körsbärsblommor&lt;/h2>
+  &lt;p>När som helst kommer körsbärsträden blomma och himlen färgas rosa. När träden väl står i blom är våren här på riktigt. Här är 3 fakta om körsbärsblommor som är roliga att känna till – håll tillgodo!&lt;/p>
 
-&lt;h3>Körsbärsblomman har en egen festival&lt;/h3>
-&lt;p>Världens största festival för körsbärsblomman firas i USA:s huvudstad Washington D.C där blomman är en symbol för vänskapen mellan Japan och USA.&lt;/p>
+  &lt;h3>Körsbärsblomman har en egen festival&lt;/h3>
+  &lt;p>Världens största festival för körsbärsblomman firas i USA:s huvudstad Washington D.C där blomman är en symbol för vänskapen mellan Japan och USA.&lt;/p>
 
-&lt;h3>Blommar bara en vecka&lt;/h3>
-&lt;p>Blommorna har normalt sett fem urnupna kronblad och blommorna sitter tillsammans i klasar. Formen och färgen på dessa blommor har länge fått symbolisera renhet och enkelhet. Blomningssäsongen varar vanligtvis upp till en månad medan varje enskilt träd endast kan blomma i en vecka. Träden lever i mellan 30 till 40 år.&lt;/p>
+  &lt;h3>Blommar bara en vecka&lt;/h3>
+  &lt;p>Blommorna har normalt sett fem urnupna kronblad och blommorna sitter tillsammans i klasar. Formen och färgen på dessa blommor har länge fått symbolisera renhet och enkelhet. Blomningssäsongen varar vanligtvis upp till en månad medan varje enskilt träd endast kan blomma i en vecka. Träden lever i mellan 30 till 40 år.&lt;/p>
 
-&lt;h3>Bästsäljande doft&lt;/h3>
-&lt;p>Den populäraste och mest sålda parfymen i USA är Bath and Body Works' Japanese Cherry Blossom med doft av körsbärsblomman.&lt;/p>
-            </code>
-          </pre>
-        </figure>
+  &lt;h3>Bästsäljande doft&lt;/h3>
+  &lt;p>Den populäraste och mest sålda parfymen i USA är Bath and Body Works' Japanese Cherry Blossom med doft av körsbärsblomman.&lt;/p>
+              </code>
+            </pre>
+          </figure>
+        </div>
       </figure>
 
       <h3>Beskriv med text allt innehåll som inte är text</h3>
@@ -171,22 +175,24 @@
       <p>Tanken med textalternativ (oftast attributet <code>alt</code>) är att det ska kunna ersätta bilden för den som inte ser. Textalternativ innebär oftast en kort beskrivning av motivet – eller av funktionen i de fall bilden används exempelvis som symbol på en knapp.</p>
       <figure class="box-example" role="group">
         <figcaption><h4>Exempel: Användning av <code>alt</code> attributet i bild</h4></figcaption>
-        <figure>
-          <figcaption>
-            🖥️Renderad
-          </figcaption>
-          <img src="/assets/images/cherryflowers.jpg" alt="Rosa körsbärsblommor">
-        </figure>
-        <figure>
-          <figcaption>
-            Exempelkod
-          </figcaption>
-          <pre>
-            <code>
-&lt;img src="/assets/images/cherryflowers.jpg" alt="Rosa körsbärsblommor">
-            </code>
-          </pre>
-        </figure>
+        <div class="two-columns inner-box">
+          <figure>
+            <figcaption>
+              🖥️Renderad
+            </figcaption>
+            <img src="/assets/images/cherryflowers.jpg" alt="Rosa körsbärsblommor">
+          </figure>
+          <figure>
+            <figcaption>
+              Exempelkod
+            </figcaption>
+            <pre>
+              <code>
+  &lt;img src="/assets/images/cherryflowers.jpg" alt="Rosa körsbärsblommor">
+              </code>
+            </pre>
+          </figure>
+        </div>
       </figure>
 
       <h3>Ge användarna möjlighet att pausa eller stänga av rörelser</h3>
@@ -199,22 +205,24 @@
 
       <figure class="box-example" role="group">
         <figcaption><h4>Exempel: Markera telefonlänk i koden med   <code>href="tel:</code> attributet</h4></figcaption>
-        <figure>
-          <figcaption>
-            🖥️Renderad
-          </figcaption>
-          <a href="tel:+46855050000">08 – 55 05 00 00</a>
-        </figure>
-        <figure>
-          <figcaption>
-            Exempelkod
-          </figcaption>
-          <pre>
-            <code>
-&lt;a href="tel:+46855050000">08 – 55 05 00 00&lt;/a>
-            </code>
-          </pre>
-        </figure>
+        <div class="two-columns inner-box">
+          <figure>
+            <figcaption>
+              🖥️Renderad
+            </figcaption>
+            <a href="tel:+46855050000">08 – 55 05 00 00</a>
+          </figure>
+          <figure>
+            <figcaption>
+              Exempelkod
+            </figcaption>
+            <pre>
+              <code>
+  &lt;a href="tel:+46855050000">08 – 55 05 00 00&lt;/a>
+              </code>
+            </pre>
+          </figure>
+        </div>
       </figure>
 
       <h3>Hjälp användarna att undvika och rätta till misstag</h3>
@@ -223,28 +231,30 @@
 
       <figure class="box-example" role="group">
         <figcaption><h4>Exempel: Australiskt telefonnummerfält med förlåtande validering</h4></figcaption>
-        <figure>
-          <figcaption>
-            🖥️Renderad
-          </figcaption>
-          <label for="phone">Telefonnummer</label>
-          <input id="phone" name="phone" type="tel" pattern="^(\(?0[1-9]{1}\)?)?[0-9 -]*$" aria-describedby="phone-desc">
-          <p id="phone-desc">Exempel: (02) 1234 1234</p>
-        </figure>
-        <figure>
-          <figcaption>
-            Exempelkod
-          </figcaption>
-          <pre>
-            <code>
-&lt;label for="phone">Phone&lt;/label>
-&lt;input id="phone" name="phone" type="tel"
-pattern="^(\(?0[1-9]{1}\)?)?[0-9 -]*$"
-aria-describedby="phone-desc">
-&lt;p id="phone-desc">For example, (02) 1234 1234&lt;/p>
-            </code>
-          </pre>
-        </figure>
+        <div class="two-columns inner-box">
+          <figure>
+            <figcaption>
+              🖥️Renderad
+            </figcaption>
+            <label for="phone">Telefonnummer</label>
+            <input id="phone" name="phone" type="tel" pattern="^(\(?0[1-9]{1}\)?)?[0-9 -]*$" aria-describedby="phone-desc">
+            <p id="phone-desc">Exempel: (02) 1234 1234</p>
+          </figure>
+          <figure>
+            <figcaption>
+              Exempelkod
+            </figcaption>
+            <pre>
+              <code>
+  &lt;label for="phone">Phone&lt;/label>
+  &lt;input id="phone" name="phone" type="tel"
+  pattern="^(\(?0[1-9]{1}\)?)?[0-9 -]*$"
+  aria-describedby="phone-desc">
+  &lt;p id="phone-desc">For example, (02) 1234 1234&lt;/p>
+              </code>
+            </pre>
+          </figure>
+        </div>
       </figure>
     </article>
     <article class="article">

@@ -3,7 +3,7 @@
 
 /* Mixin */
 @mixin md-screen {
-  @media (min-width: 720px) {
+  @media (min-width: 920px) {
     @content
   }
 }
@@ -39,6 +39,11 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 1.7rem;
+  margin-top: 2rem;
+}
+
+h3 {
+  margin-top: 1.5rem;
 }
 
 p, ul, ol {
@@ -177,12 +182,12 @@ a.sidebar-link {
   }
 }
 
+/* Select very first paragraph */
 h1:first-child+p {
   margin-top: 2rem;
 }
 
 /* Code box examples */
-
 .box-example {
   border: solid 1px lightgray;
   padding: 8px 16px;
@@ -190,4 +195,27 @@ h1:first-child+p {
 /*   figcaption {
     padding: 8px 16px;
   } */
+}
+
+.two-columns {
+  @include md-screen() {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+.inner-box {
+  figcaption {
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+  padding: 0.2rem 0.5rem;
+  background-color: aliceblue;
+  }
+
+  figure:first-child {
+    margin-bottom: 1.5rem;
+  }
 }
