@@ -60,18 +60,23 @@ pre {
 .sidebar-close {
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
+  opacity: 0;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 @media (min-width: 920px) {
   .sidebar-close {
     -webkit-transform: translateX(0);
             transform: translateX(0);
+    opacity: 1;
   }
 }
 
 .sidebar-open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+  opacity: 1;
 }
 
 /* Navbar */
