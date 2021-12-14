@@ -34,7 +34,7 @@ h1 {
 }
 
 h3 {
-  margin-top: 1.5rem;
+  margin-top: 2rem;
 }
 
 p, ul, ol {
@@ -221,6 +221,12 @@ h1:first-child + p {
   margin-bottom: 0.5rem;
   padding: 0.2rem 0.5rem;
   background-color: rgba(0, 0, 0, 0.06);
+}
+
+.inner-box figure {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .inner-box figure:first-child {
