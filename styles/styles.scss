@@ -1,6 +1,13 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+/* Mixin */
+@mixin md-screen {
+  @media (min-width: 720px) {
+    @content
+  }
+}
+
 /* Reset */
 ul, ol, pre, figure {
   margin: 0;
@@ -46,10 +53,17 @@ pre {
 /* States */
 .can-hide {
   display: none;
+  @include md-screen() {
+    display: block;
+  }
 }
 
-.closed {
+.sidebar-close {
   transform: translateX(-100%);
+}
+
+.sidebar-open {
+  transform: translateX(0);
 }
 
 /* Navbar */
@@ -65,6 +79,10 @@ pre {
   border-bottom: 1px solid #eaecef;
   width: 100%;
 
+  @include md-screen() {
+    padding-left: 1.5rem;
+  }
+
   .logo {
     height: 2.2rem;
     min-width: 2.2rem;
@@ -76,7 +94,7 @@ pre {
   }
 }
 
-.sidebar-button {
+.menu-button {
   display: block;
   cursor: pointer;
   width: 1.25rem;
@@ -86,10 +104,14 @@ pre {
   top: .6rem;
   left: 1rem;
 
+  @include md-screen() {
+    display: none;
+  }
   .icon {
     display: block;
     width: 1.25rem;
     height: 1.25rem;
+
   }
 }
 

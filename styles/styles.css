@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+/* Mixin */
 /* Reset */
 ul, ol, pre, figure {
   margin: 0;
@@ -45,9 +46,20 @@ pre {
   display: none;
 }
 
-.closed {
+@media (min-width: 720px) {
+  .can-hide {
+    display: block;
+  }
+}
+
+.sidebar-close {
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
+}
+
+.sidebar-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 /* Navbar */
@@ -65,6 +77,12 @@ pre {
   width: 100%;
 }
 
+@media (min-width: 720px) {
+  .navbar {
+    padding-left: 1.5rem;
+  }
+}
+
 .navbar .logo {
   height: 2.2rem;
   min-width: 2.2rem;
@@ -76,7 +94,7 @@ pre {
   display: inline-block;
 }
 
-.sidebar-button {
+.menu-button {
   display: block;
   cursor: pointer;
   width: 1.25rem;
@@ -87,7 +105,13 @@ pre {
   left: 1rem;
 }
 
-.sidebar-button .icon {
+@media (min-width: 720px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.menu-button .icon {
   display: block;
   width: 1.25rem;
   height: 1.25rem;
