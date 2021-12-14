@@ -54,12 +54,15 @@ pre {
 .can-hide {
   display: none;
   @include md-screen() {
-    display: block;
+    display: inline;
   }
 }
 
 .sidebar-close {
   transform: translateX(-100%);
+  @include md-screen() {
+    transform: translateX(0);
+  }
 }
 
 .sidebar-open {
@@ -159,7 +162,10 @@ a.sidebar-link {
 }
 
 .main {
-  padding: 3.6rem 1.5rem 1.5rem 1.5rem;
+  padding: 3.6rem 2rem 2rem 2rem;
+  @include md-screen() {
+    padding-left: 22rem;
+  }
 }
 
 .article {
